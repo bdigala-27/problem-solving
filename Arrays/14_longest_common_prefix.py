@@ -24,7 +24,7 @@ strs[i] consists of only lowercase English letters.
 '''
 
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs):
         p = strs[0]
         for i,char in enumerate(p):
             for s in strs:

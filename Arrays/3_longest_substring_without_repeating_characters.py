@@ -64,6 +64,25 @@ class Solution:
             alphabet[letter] = index
         
         return ans
+    
+    
+#3 most optimized version
+class Solution3:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        i = 0
+        max_len = 0
+        char_index = {}  # Dictionary to store the index of each character
 
+        for j in range(len(s)):
+            if s[j] in char_index:
+                # If the character is already in the dictionary,
+                # move the left pointer (i) to the right of the previous
+                # occurrence of the character
+                i = max(char_index[s[j]] + 1, i)
+
+            char_index[s[j]] = j  # Update the index of the current character
+            max_len = max(max_len, j - i + 1)
+
+        return max_len
 
 

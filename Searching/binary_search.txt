@@ -1,0 +1,34 @@
+Standard Binary Search
+    Search for an element in a sorted array or list
+    Repeatedly divide the search interval in half
+Binary Search on Sorted Rotated Array
+    Array is sorted but rotated at some pivot point
+    Find the pivot point first
+    Apply standard binary search on the two sorted subarrays
+Binary Search with Duplicates
+    Sorted array or list with duplicate elements
+    Handle duplicates properly for correctness
+Closest Element in Sorted Array
+    Find the element closest to a given target value
+    Narrow down the search interval using binary search
+    Compare the target value with the closest elements
+Search in Infinite Sorted Array
+    Search in a sorted array or list of infinite size (or very large)
+    Find the search interval using a modified binary search approach
+    Apply standard binary search on the search interval
+Search in Sorted Matrix
+    Search for an element in a sorted 2D matrix
+    Combine binary search techniques on rows and columns
+Search in Sorted 2D Array
+    Sorted 2D array, sorted row-wise and column-wise
+    Combine binary search on rows and columns
+Search in Sorted Array of Unknown Size
+    Size of the sorted array or list is unknown
+    Determine the search interval while searching for the target
+Search in Bitonic Array
+    Array first sorted in ascending order, then descending order
+    Find the peak element using a modified binary search
+    Search the ascending and descending subarrays separately
+Search in Sorted Linked List
+    Search for an element in a sorted linked list
+    Use a modified binary search with "slow" and "fast" pointers

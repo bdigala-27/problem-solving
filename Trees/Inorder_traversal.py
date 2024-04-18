@@ -20,6 +20,21 @@ def inordertraversal(root):
             break
     print()
     
+    
+#using recurrsion
+
+def recurrsion(root):
+    
+    if root is None: return
+    
+    recurrsion(root.left)
+    
+    print(root.data, end = " ")
+    
+    recurrsion(root.right)
+    
+    
+    
 if __name__ == "__main__":
     root = Node(1)
     root.left = Node(2)
@@ -28,4 +43,5 @@ if __name__ == "__main__":
     root.left.right = Node(5)
      
     inordertraversal(root)
-        
+    print("recurssion Output")
+    recurrsion(root)
